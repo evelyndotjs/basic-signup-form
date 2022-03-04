@@ -23,7 +23,7 @@ export default function App() {
     event.preventDefault();
     if (formInputs.password === formInputs.confirmPassword) {
       console.log("Successfully signed up");
-    } else console.log("Password do not match");
+    } else console.log("Passwords do not match");
 
     if (formInputs.joinNewsletter === true) {
       console.log("Thanks for joining our newsletter!");
