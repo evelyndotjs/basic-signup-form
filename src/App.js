@@ -24,10 +24,10 @@ export default function App() {
     if (formInputs.password === formInputs.confirmPassword) {
       console.log("Successfully signed up");
     } else console.log("Passwords do not match");
+    return
 
     if (formInputs.joinNewsletter === true) {
       console.log("Thanks for joining our newsletter!");
-      return;
     }
   }
 
