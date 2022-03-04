@@ -27,6 +27,7 @@ export default function App() {
 
     if (formInputs.joinNewsletter === true) {
       console.log("Thanks for joining our newsletter!");
+      return;
     }
   }
 
