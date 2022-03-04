@@ -22,11 +22,11 @@ export default function App() {
   function handleSubmit(event) {
     event.preventDefault();
     if (formInputs.password === formInputs.confirmPassword) {
-      console.log("Successfully signed in!");
-    } else console.log("Password mismatched!");
+      console.log("Successfully signed up");
+    } else console.log("Password do not match");
 
     if (formInputs.joinNewsletter === true) {
-      console.log("Thanks for joining!");
+      console.log("Thanks for joining our newsletter!");
     }
   }
 
