@@ -9,8 +9,6 @@ export default function App() {
     joinNewsletter: true,
   });
 
-  console.log(formInputs);
-
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
     setFormInputs((prev) => {
@@ -24,8 +22,8 @@ export default function App() {
   function handleSubmit(event) {
     event.preventDefault();
     if (formInputs.password === formInputs.confirmPassword) {
-      console.log("Success!");
-    } else console.log("Failed!");
+      console.log("Successfully signed in!");
+    } else console.log("Password mismatched!");
 
     if (formInputs.joinNewsletter === true) {
       console.log("Thanks for joining!");
@@ -65,7 +63,7 @@ export default function App() {
             id="okayToEmail"
             type="checkbox"
             name="joinNewsletter"
-            value={formInputs.joinNewsletter}
+            checked={formInputs.joinNewsletter}
             onChange={handleChange}
           />
           <label htmlFor="okayToEmail">I want to join the newsletter</label>
